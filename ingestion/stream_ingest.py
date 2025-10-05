@@ -17,7 +17,7 @@ if TEST_MODE:
     df = df.limit(MAX_ROWS)
 
 # -----------------------------
-# Fix ambiguous column
+# Rename ambiguous column
 # -----------------------------
 if "pickup_datetime" in df.columns:
     df = df.drop("pickup_datetime")  # remove duplicate if exists
